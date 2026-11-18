@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+header {
+  background: #1e3a5f;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+header h1 { margin: 0 0 10px; }
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+h2 { color: #1e3a5f; margin-top: 0; }
+a { color: #1e3a5f; }
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
+
+/* Foto de perfil */
+.foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  margin-bottom: 15px;
+}
+
+/* Tarjetas de intereses */
+.intereses {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.tarjeta {
+  background: #f4f4f4;
+  border-left: 4px solid #1e3a5f;
+  padding: 15px;
+  border-radius: 6px;
+}
+.tarjeta h3 {
+  margin-top: 0;
+  color: #1e3a5f;
+}
+
+/* Imágenes de las tarjetas */
+.tarjeta img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.imagenes-dobles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* Ajuste del recorte de cada imagen */
+img[src*="gym"]      { object-position: center; }
+img[src*="baki"]     { object-position: top; }
+img[src*="naruto"]   { object-position: center 35%; }
+img[src*="fc27"]     { object-position: center; }
+img[src*="fortnite"] { object-position: top; }
